@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="./Estilos/estilos.css">
@@ -11,18 +12,31 @@
 
     
 <body>
-    <header>
-        <aside class="logo">  <img src="./img/3Mesa de trabajo 1.png" alt="Logo" height="auto" width="200px"></aside>
-        <nav class="barra">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./Pages/about.html">About</a></li>
-                <li><a href="./Pages/contacto.html">Contact</a></li>
-                <li><a href="./Pages/portafolio.html">Portfolio</a></li>
-                <li><a href="./Pages/latestwork.html">Latestwork</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid">
+    </div class="row">
+        <header class="col-xs-2">
+            <div class="img">
+                <img src="./img/3Mesa de trabajo 1.png"
+                alt ="imagen" class="img-fluid">
+            </div>
+            <nav class="navbar navbar-light" style="background-color: blueviolet;">
+                <a href="index.html">Home</a>
+                    <a href="./Pages/about.html">About</a>
+                    <a href="./Pages/contacto.html">Contact</a>
+                    <a href="./Pages/portafolio.html">Portfolio</a>
+                    <a href="./Pages/latestwork.html">Latestwork</a>
+              </nav>
+        </header>
+          
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <main class="col-8">main</main>
+            <aside class="col-4">aside</aside>
+        </div>
+    </div>
+
     <main>
         <div>
             <aside class="call">
@@ -41,7 +55,6 @@
         
     </main>
     
-
     <footer>
         <aside class="final">
             <ul>
@@ -58,6 +71,9 @@
             <p>Todos los derechos son reservados por copyright</p>
             
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>
 </body>
 </html>
 
