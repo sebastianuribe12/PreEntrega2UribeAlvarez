@@ -5,26 +5,28 @@ font-family: 'Roboto', sans-serif;*/
 Comienza el header
 */
 *{
+    width: auto;
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
 header{
+    width: auto;
     background-color: blueviolet;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
+    padding-right: 20px;
 }
 header img{
     max-height: 100px;
-    max-width: 200px;]
+    max-width: 200px;
 }
 main{
+    width: auto;
     background-color: rgb(255, 123, 0);
-}
-aside{
-    background-color: aqua;
 }
 .navbar {
     float: right;
@@ -34,7 +36,7 @@ aside{
     list-style: none;
     display: inline-block;
     text-decoration: none;
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 .navbar a:hover{
     background-color: rgb(60, 218, 218);
@@ -47,38 +49,37 @@ aside{
 Comienza el main
 */
 main{
-    height: calc(100vh - 80px);
+    width: auto;
+    height: auto;
     width: 100%;
     background-color: rgba(15, 15, 15, 0.959);
     
 }
-
-
+.carousel-inner  {
+    object-fit:fill;
+    height: 50vh;
+    width: 100%; }
 .call{
-    width:100% ;
-    height: 300px;
-    background-image: url(../img/paisaje.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Roboto', sans-serif;
-    font-size:large;
-    color: white;
-    padding:100px;
-    text-align: center;
+    width:auto ;
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(2, 2, 2, 0.959);
+    grid-auto-rows: 500px;
+    padding: 20px;
 }
-.call h1{
-    margin-bottom: 20px;
-}
-.call a{    
+
+.main a{    
     font-family: 'Roboto', sans-serif;
     font-size:medium;
-    color: rgb(226, 2, 215);
+    color: white;
     text-decoration: none;
     background-color: rgb(36, 223, 223);
     padding: 10px 20px;
+    align-items: center;
 }
-.call a:hover{
-    background-color: rgb(68, 90, 90);
+.main a:hover{
+    background-color:rgb(226, 2, 215);
 }
 
 #sec1{
@@ -89,41 +90,19 @@ main{
     padding: 20PX;
 }
 
-.cont{
-    margin-left: 200px;
-    width: 100%;
-    min-height: 300px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
+
+.conocimiento {
+    width: auto;
+    max-height:auto;
+    background-color: rgba(15, 15, 15, 0.959);
+    padding: 200px;
 }
-.item2{
-    background-image: url(../img/premier.png);
-}
-.item1{
-    background-image: url(../img/after-effects.png);
-}
-.item3{
-    background-image: url(../img/illustrator.png);
-}
-.item4{
-    background-image: url(../img/photoshop.png);
-}
-.item{
-    height: 120px;
-    width: 120px;
-    color: white;
-    text-align: center;
-    border: 3px solid #333;
-    background-size: cover;
-}
-@media only screen (min-width 320 ) {
-    
-}
+
 /*
 Comienza el Footer
 */
 .final{
+    width: auto;
     float: left;
 }
 .final a{
@@ -140,7 +119,7 @@ Comienza el Footer
     list-style: none;
     display: inline-block;
     text-align: center;
-    margin: 20px;
+    padding: 10px;
 }
 .redes{
     text-align: right;
@@ -150,10 +129,10 @@ Comienza el Footer
 }
 
 footer{
+    width: auto;
     font-family: 'Open Sans', sans-serif;
     background-color: blueviolet;
     width: auto;
-
     font-size: 15px;
     text-align: right;
     color: white;
@@ -161,34 +140,29 @@ footer{
 
 }
 
-
-
 /*
 Comienza lineas para pagina About
 */
 .me{
     color: white;
     width:100% ;
-    height: 400px;
+    height: auto;
     font-family: 'Open Sans', sans-serif;
     font-size:15px;
     color: white;
-    padding:100px;
+    padding:20px;
     text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(2, 2, 2, 0.959);
+    padding: 60px;
 }
+
 .me  h2{
     text-align: left;
     font-family: 'Roboto', sans-serif;
 }
-.foto{
-    width: 250px;
-    height: 250px;
-    background-image: url(../img/sebas.png);
-    background-size: cover;
-    background-position: center;
-    float:right;
-    
-}
+
 .SeeMyJob{
     color: white;
     width:100% ;
@@ -214,7 +188,12 @@ Comienza lineas para pagina About
 .SeeMyJob a:hover{
     background-color: rgb(68, 90, 90);
 }
-
+.card-text{
+    color: black;
+}
+.card-img-top{
+    object-fit:scale-down;
+}
 /*
 Comienza lineas para pagina CONTACT
 */
