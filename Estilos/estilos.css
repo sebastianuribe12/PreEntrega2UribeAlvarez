@@ -55,17 +55,17 @@ main{
     background-color: rgba(15, 15, 15, 0.959);
     
 }
+.carousel {
+    max-height: 90vh;
+}
 .carousel-inner  {
-    object-fit:fill;
-    height: 50vh;
+    object-fit:center;
+    max-height: 50vh;
     width: 100%; }
 .call{
     width:auto ;
     max-height: 400px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(2, 2, 2, 0.959);
-    grid-auto-rows: 500px;
     padding: 20px;
 }
 
@@ -84,20 +84,17 @@ main{
 
 #sec1{
     font-family: 'Roboto', sans-serif;
-    font-size:xx-large;
     color: white;
     text-align: center;
     padding: 20PX;
 }
 
 
-.conocimiento {
-    width: auto;
-    max-height:auto;
-    background-color: rgba(15, 15, 15, 0.959);
-    padding: 200px;
+.container-fluid {
+    min-height: 250px;
+    border: 8px solid rebeccapurple;
+    padding-top: 30px;
 }
-
 /*
 Comienza el Footer
 */
