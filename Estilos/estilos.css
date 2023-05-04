@@ -11,10 +11,13 @@ Comienza el header
     box-sizing: border-box;
     
 }
-
+.fondo {
+    background-image: url(../img/headergradientSINicon.png);
+    background-size:cover
+}
 header{
     width: auto;
-    background-color: blueviolet;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
@@ -47,7 +50,7 @@ Comienza el main
 main{
     width: auto;
     height: auto;
-    background-color: rgba(15, 15, 15, 0.959);
+    /*background-color: rgba(15, 15, 15, 0.959);*/
 }
 
 .carousel {
@@ -64,7 +67,7 @@ main{
 .call{
     width:auto ;
     max-height: 400px;
-    background-color: rgba(2, 2, 2, 0.959);
+    /*background-color: rgba(2, 2, 2, 0.959);*/
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,7 +101,6 @@ main{
 }
 .container-fluid {
     min-height: 250px;
-    border: 8px solid rebeccapurple;
     padding-top: 30px;
 }
 /*
@@ -133,7 +135,7 @@ Comienza el Footer
 
 footer{
     font-family: 'Open Sans', sans-serif;
-    background-color: blueviolet;
+    background-color: rgb(35, 2, 66);
     font-size: 15px;
     text-align: right;
     color: white;
@@ -152,7 +154,9 @@ Comienza lineas para pagina About
     font-size:15px;
     color: white;
     padding:20px;
-    text-align: left;/*
+    text-align: left;
+    background-color: rgb(19, 19, 19);
+    /*
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -174,6 +178,7 @@ Comienza lineas para pagina About
     color: white;
     padding:10px;
     text-align: center;
+    background-color: rgb(19, 19, 19);
 }
 .SeeMyJob h1{
     margin-bottom: 20px;
