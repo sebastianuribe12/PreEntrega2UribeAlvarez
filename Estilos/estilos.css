@@ -24,10 +24,6 @@ header img{
     max-height: 100px;
     max-width: 200px;
 }
-main{
-    width: auto;
-    background-color: rgb(255, 123, 0);
-}
 .navbar {
     float: right;
 }
@@ -51,25 +47,30 @@ Comienza el main
 main{
     width: auto;
     height: auto;
-    width: 100%;
     background-color: rgba(15, 15, 15, 0.959);
-    
 }
+
 .carousel {
-    max-height: 90vh;
+    max-height: 80vh;
 }
 .carousel-inner  {
-    object-fit:center;
     max-height: 50vh;
     width: 100%; }
+
+.carousel-item {
+    object-fit:fill;
+
+    }
 .call{
     width:auto ;
     max-height: 400px;
     background-color: rgba(2, 2, 2, 0.959);
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.main a{    
+.item a{    
     font-family: 'Roboto', sans-serif;
     font-size:medium;
     color: white;
@@ -78,7 +79,7 @@ main{
     padding: 10px 20px;
     align-items: center;
 }
-.main a:hover{
+.item a:hover{
     background-color:rgb(226, 2, 215);
 }
 
@@ -89,7 +90,12 @@ main{
     padding: 20PX;
 }
 
-
+.main4{
+    width: auto;
+    height: auto;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.959);
+}
 .container-fluid {
     min-height: 250px;
     border: 8px solid rebeccapurple;
