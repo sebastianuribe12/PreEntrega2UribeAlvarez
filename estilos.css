@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap");
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+/*
+Comienza el header
+*/
+* {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fondo {
+  background-image: url(../img/headergradientSINicon.png);
+}
+
+.call {
+  max-width: 100%;
+  max-height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 5;
+}
+
+header {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: url(../img/headergradientSINicon.png);
+}
+
+header img {
+  max-height: 100px;
+  max-width: 200px;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-right: 30px;
+}
+
+.navbar a:hover {
+  background-color: rgb(60, 218, 218);
+}
+
+/*
+Comienza el main
+*/
+main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 10fr);
+  grid-auto-rows: 2;
+  background-color: rgba(15, 15, 15, 0.959);
+}
+
+.carousel-inner {
+  max-height: 30vh;
+}
+
+.carousel-item {
+  object-fit: cover;
+  align-items: center;
+}
+
+.item a {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(36, 223, 223);
+  padding: 10px;
+  align-items: center;
+}
+
+.item a:hover {
+  background-color: rgb(226, 2, 215);
+}
+
+#sec1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20PX;
+}
+
+.main4 {
+  height: auto;
+  width: fit-content;
+}
+
+.container-fluid {
+  min-height: 250px;
+  padding-top: 30px;
+}
+
+/*
+Comienza el Footer
+*/
+.footer {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(35, 2, 66);
+  font-size: 15px;
+  text-align: right;
+  color: white;
+  padding: 80px;
+}
+
+#final {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+#final a {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+#final a:hover {
+  background-color: rgb(60, 218, 218);
+}
+
+#final li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+#redes {
+  text-align: right;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 100px) {
+  .call {
+    max-width: 334px;
+  }
+  .carousel-inner {
+    max-height: 30vh;
+    max-width: 30vh;
+  }
+  .navbar a {
+    font-size: smaller;
+  }
+  header {
+    float: right;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 3;
+  }
+}
+@media screen and (min-width: 333px) {
+  .call {
+    max-height: fit-content;
+    max-width: 479px;
+  }
+  .carousel-inner {
+    max-height: 50vh;
+    max-width: 60vh;
+  }
+  .navbar a {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 478px) {
+  .call {
+    max-width: 768px;
+    max-height: fit-content;
+    align-items: center;
+  }
+  .carousel-inner {
+    max-height: 80vh;
+    max-width: 70vh;
+  }
+  header {
+    float: right;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1;
+  }
+}
+@media screen and (min-width: 767px) {
+  .call {
+    max-width: 1024px;
+    max-height: fit-content;
+  }
+  .carousel-inner {
+    max-height: 80vh;
+    max-width: 90vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .call {
+    max-width: 1199px;
+    max-height: fit-content;
+  }
+  .carousel-inner {
+    max-height: fit-content;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .call {
+    max-width: 2000px;
+    max-height: fit-content;
+  }
+  .carousel-inner {
+    max-height: fit-content;
+  }
+}
+/*
+Comienza lineas para pagina About
+*/
+.me {
+  color: white;
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  background-color: rgb(19, 19, 19);
+  /*
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgba(2, 2, 2, 0.959);
+  padding: 60px;*/
+}
+
+.me h2 {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.SeeMyJob {
+  color: white;
+  width: 100%;
+  height: 300px;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(19, 19, 19);
+}
+
+.SeeMyJob h1 {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.SeeMyJob a {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  color: rgb(226, 2, 215);
+  text-decoration: none;
+  background-color: rgb(36, 223, 223);
+  padding: 10px 20px;
+}
+
+.SeeMyJob a:hover {
+  background-color: rgb(68, 90, 90);
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+  color: rgb(61, 61, 61);
+}
+
+/*
+Comienza lineas para pagina CONTACT
+*/
+.contact {
+  color: white;
+  width: 100%;
+  min-height: 400px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 100px;
+  text-align: left;
+}
+
+.qr {
+  width: 250px;
+  height: 250px;
+  min-width: 100px;
+  min-height: 100px;
+  background-image: url(../img/qr.png);
+  background-size: cover;
+  background-position: center;
+  float: right;
+  padding: 100px;
+}
+
+.follow {
+  color: white;
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  color: white;
+  margin: px;
+  text-align: center;
+}
+
+.follow a {
+  font-size: 60px;
+}
+
+/*
+Comienza lineas para pagina portfolio
+*/
+.port {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
